@@ -1,0 +1,139 @@
+.main-container {
+    height: 100vh;
+    width: 33%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 4fr 1.5fr 2fr 1fr 2fr 2fr 2fr;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#Left {
+    background-color: #bbb9f6;
+}
+
+#Right {
+    background-color: #e4e3f1;
+}
+
+.picture {
+    /* background-color: lime; */
+    grid-column: 1/2;
+    grid-row: 1/2;
+    align-content: center;
+    border-top-left-radius: 5%;
+}
+
+.picture div {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 10px auto;
+}
+
+.picture img {
+    display: inline;
+    margin: auto 0;
+    margin-left: 15%;
+    height: 100%;
+    width: auto;
+    clip-path: circle(); 
+}
+
+.name {
+    /* background-color: limegreen; */
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.social {
+    /* background-color: green; */
+    grid-column: 1/2;
+    grid-row: 3/5;
+}
+
+.skills{
+    /* background-color: darkgreen; */
+    grid-column: 1/2;
+    grid-row: 5/7;
+    border-bottom-left-radius: 5%;
+}
+
+.work-exp {
+    /* background-color: lightblue; */
+    grid-column: 2/3;
+    grid-row: 1/4;
+    border-top-right-radius: 5%;
+}
+
+.edu-hist {
+    /* background-color: skyblue; */
+    grid-column: 2/3;
+    grid-row: 4/6;
+}
+
+.certs{
+    /* background-color: cyan; */
+    grid-column: 2/3;
+    grid-row: 6/7;
+    border-bottom-right-radius: 5%;
+}
+
+.name h2{
+    font-size: x-large;
+    margin-left: 15px;
+    margin-bottom: 0;
+}
+
+.name h3{
+    font-size: large;
+    margin-left: 15px;
+    margin-top: 5px;
+    text-indent: 15px;
+}
+
+#Left h1{
+    text-align: left;
+    margin-left: 15px;
+    font-weight: 1000;
+    font-size: larger;
+}
+
+#Right h1{
+    text-align: right;
+    margin-left: 30px;
+    margin-top: 25px;
+    margin-bottom: 0px;
+    background-color: aliceblue;
+    padding-right: 5px;
+    padding-top: 25px;
+    padding-bottom: 0px;
+    font-weight: 1000;
+    font-size: larger;
+    border-top-left-radius: 100%;
+    height: 35px;
+}
+
+.social p {
+    margin-left: 15px;
+}
+
+a:link {
+    color: blue;
+    text-decoration: none;
+}
+
+a:visited {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    color: cyan;
+    font-style: italic;
+}
+
+a:active {
+    color: red;
+}
