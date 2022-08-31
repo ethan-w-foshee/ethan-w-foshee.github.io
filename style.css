@@ -71,7 +71,7 @@ nav {
     height: 15vw;
     border-radius: 50% 50%;
     border: solid orange 2px;
-    margin: 10% auto 0%;
+    margin: 0% auto 0%;
     grid-column: 2/3;
 }
 
@@ -112,6 +112,17 @@ button {
     color: #0795C3;
     letter-spacing: .60vw;
     font-style: italic;
+    border: white 1px solid;
+}
+
+#portfolio a:link {
+    text-decoration: none;
+    color: #0795C3;
+}
+
+#portfolio a:visited {
+    text-decoration: none;
+    color: #0795C3;
 }
 
 a:link {
