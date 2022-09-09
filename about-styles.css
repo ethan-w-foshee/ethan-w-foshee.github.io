@@ -2,6 +2,17 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: blue;
+/* Media for a PC */
+@media (min-width: 576px) {
+    body{
+        background-color: lime;
+    }
+}
+
+/* Media for a Phone */
+@media (max-width: 576px) {
+    body{
+        background-color: pink;
+    }
+
 }
