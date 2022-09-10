@@ -3,11 +3,7 @@
 }
 
 @media (min-width: 576px) {
-    body {
-        display: flex;
-    }
-    
-    .main-container {
+    main {
         height: 100vh;
         width: 33%;
         display: grid;
@@ -130,22 +126,22 @@
         margin-left: 15px;
     }
     
-    a:link {
+    main a:link {
         color: blue;
         text-decoration: none;
     }
     
-    a:visited {
+    main a:visited {
         color: blue;
         text-decoration: none;
     }
     
-    a:hover {
+    main a:hover {
         color: cyan;
         font-style: italic;
     }
     
-    a:active {
+    main a:active {
         color: red;
     }
 }
