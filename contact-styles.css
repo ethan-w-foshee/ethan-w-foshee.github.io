@@ -1,17 +1,47 @@
 * {
     box-sizing: border-box;
+    font-family: 'Lucida Sans';
 }
 
 /* Media for a PC */
 @media (min-width: 576px) {
     body {
-        background-color: red;
+        color: darkblue;
+        background-image: url(./contact-background.webp);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: lightblue;
+    }
+    form {
+        background-image: url(./clipboard.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        padding: 4ch;
+        padding-top: 18ch;
+        height: 98ch;
+        width: 25%;
+        margin: auto;
+    }
+
+    form > * {
+        margin-top: 4ch;
+    }
+
+    body div{
+        /* border: darkred 2px solid; */
+    }
+
+    #hdykm div{
+        /* border: black 1px solid; */
     }
 }
 
 /* Media for a Phone */
 @media (max-width: 576px) {
     body {
-        background-color: blue;
+        background-color: red;
+        color: black;
     }
 }
