@@ -71,26 +71,24 @@
     }
 
     header {
-        display: grid;
-        grid-template-rows: 30% 70%;
         width: 70%;
         position: absolute;
         height: 100vh;
-        background-color: lightblue;
         margin: 0;
         padding: 0;
         z-index: 10;
         overflow-y: scroll;
+        background-color: white;
     }
 
     #navButton {
-        height: 20%;
         width: 100%;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 10vw;
         text-align: center;
         margin: 0;
         padding: 0;
+        display: block;
     }
     
     .has-border-darker {
@@ -105,18 +103,15 @@
     
     .has-border-lighter {
         background: #888888;
-        color: orange
+        color: orange;
     }
     
     .has-border-light {
         background: #999999;
-        color: orange
+        color: orange;
     }
     
     nav {
-        display: flex;
-        justify-content: flex-start;
-        flex-direction: column;
         width: 100%;
         height: 100%;
         margin: 0;
@@ -128,6 +123,7 @@
         width: 100%;
         background-color: #555555;
         padding: 0;
+        margin: 0;
     }
 
     nav a:link {

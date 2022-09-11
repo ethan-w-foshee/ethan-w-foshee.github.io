@@ -26,14 +26,14 @@
         grid-column: 2/3;
     }
     
-    h1 {
+    main h1 {
         color:#0795C3;
         grid-column: 2/3;
         margin: 1% auto;
         border-bottom: .2em solid orange;
     }
     
-    h2 {
+    main h2 {
         grid-column: 2/3;
         margin: 3% auto;
         font-style: italic;
@@ -47,7 +47,7 @@
         margin: 13% auto 0%;
     }
     
-    button {
+    main button {
         grid-column: 2/3;
         margin: 3% auto;
         margin-bottom: .33vw;
@@ -106,14 +106,14 @@
         grid-column: 2/3;
     }
     
-    h1 {
+    main h1 {
         color:#0795C3;
         grid-column: 2/3;
         margin: 1% auto;
         border-bottom: .2em solid orange;
     }
     
-    h2 {
+    main h2 {
         grid-column: 2/3;
         margin: 3% auto;
         font-style: italic;
@@ -127,7 +127,7 @@
         margin: 13% auto 0%;
     }
     
-    button {
+    main button {
         grid-column: 2/3;
         margin: 3% auto;
         margin-bottom: .33vw;
