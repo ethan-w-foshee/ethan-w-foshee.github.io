@@ -1,5 +1,4 @@
 * {
-    box-sizing: border-box;
     font-family: 'Lucida Sans';
 }
 
@@ -23,6 +22,8 @@
         height: 98ch;
         width: 25%;
         margin: auto;
+        font-size: contain;
+        min-width: 57ch;
     }
 
     form > * {
