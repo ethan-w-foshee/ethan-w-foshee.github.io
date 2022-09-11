@@ -79,14 +79,8 @@
 
 /* Media for mobile */
 @media (max-width: 576px) {
-    
     body {
         font-family: Arial, Helvetica, sans-serif;
-        background-repeat: no-repeat;
-        background-size: 100%;
-        /* background-image: url(background.jpg); */
-        background-position: center;
-        margin: 0;
     }
     
     main {
