@@ -48,10 +48,6 @@
 
 /* Media for a Phone */
 @media (max-width: 576px) {
-    header{
-        opacity: 0;
-    }
-
     body{
         background-color: pink;
     }

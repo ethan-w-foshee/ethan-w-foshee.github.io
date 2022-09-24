@@ -126,6 +126,10 @@
         position: sticky;
     }
 
+    nav .open {
+        transform: translate(-100%, 0);
+    }
+
     nav a:link {
         text-decoration: none;
     }
