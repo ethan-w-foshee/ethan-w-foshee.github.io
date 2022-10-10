@@ -64,6 +64,10 @@
     nav a:visited {
         text-decoration: none;
     }
+
+    .tapBox{
+        display: none;
+    }
 }
 
 /* Media for a Phone */
@@ -124,10 +128,7 @@
         margin: 0;
         padding: 0;
         position: sticky;
-    }
-
-    nav .open {
-        transform: translate(-100%, 0);
+        display: none;
     }
 
     nav a:link {
@@ -136,5 +137,20 @@
     
     nav a:visited {
         text-decoration: none;
+    }
+
+    .tapBox {
+        display: block;
+        height: 50px;
+        width: 50px;
+        background-color: red;
+    }
+
+    nav.open {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        position: sticky;
+        display: block;
     }
 }
