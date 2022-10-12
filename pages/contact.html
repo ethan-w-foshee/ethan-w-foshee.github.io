@@ -1,72 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact Me</title>
-<link rel="stylesheet" href="../styles/contact-styles.css">
-<link rel="stylesheet" href="../styles/nav-styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="../styles/contact-styles.css">
+    <link rel="stylesheet" href="../styles/nav-styles.css">
 </head>
+
 <body>
     <header>
         <nav>
-            <a href="../index.html" class="logo" id="navButton"><img src="https://cdn.evbuc.com/eventlogos/188084824/acastandardcirclefullname.png" class="logo" alt="austin coding academy logo"></a>
+            <a href="../index.html" class="logo" id="navButton"><img
+                    src="https://cdn.evbuc.com/eventlogos/188084824/acastandardcirclefullname.png"
+                    alt="austin coding academy logo"></a>
             <a class="has-border-darker" id="navButton" href="../pages/resume.html">Resume</a>
             <a class="has-border-dark" id="navButton" href="../pages/about.html">About Me</a>
             <a class="has-border-lighter" id="navButton" href="https://medium.com/@ethan.w.foshee">My Blog</a>
             <a class="has-border-light" id="navButton" href="../pages/contact.html">Contact Me</a>
-            </nav>
+        </nav>
+        <div id="tapBox" onclick="openNav()"></div>
     </header>
+
     <main>
-    <form action="results.html" method="GET" enctype="multipart/form-data">
-        <div>
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name" >
-        </div>
-        <div>
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" >
-        </div>
-        <div>
-            <label for="phone">Phone</label>
-            <input type="tel" name="phone" id="phone">
-        </div>
-        <div id="hdykm">
-            How do you know me?
+        <form action="results.html" method="GET" enctype="multipart/form-data">
             <div>
-                <input type="checkbox" name="classmate" id="classmate">
-                <label for="classmate">Classmate</label>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name">
             </div>
             <div>
-                <input type="checkbox" name="ressub" id="ressub">
-                <label for="ressub">Resume Submission</label>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
             </div>
             <div>
-                <input type="checkbox" name="lin" id="lin">
-                <label for="lin">LinkedIn</label>
+                <label for="phone">Phone</label>
+                <input type="tel" name="phone" id="phone">
+            </div>
+            <div id="hdykm">
+                How do you know me?
+                <div>
+                    <input type="checkbox" name="classmate" id="classmate">
+                    <label for="classmate">Classmate</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="ressub" id="ressub">
+                    <label for="ressub">Resume Submission</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="lin" id="lin">
+                    <label for="lin">LinkedIn</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="codar" id="codar">
+                    <label for="codar">Coding Academy Rec</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="other" id="other">
+                    <label for="other">Other</label>
+                </div>
             </div>
             <div>
-                <input type="checkbox" name="codar" id="codar">
-                <label for="codar">Coding Academy Rec</label>
+                <label for="comments">Questions, Comments, and Concerns?<br></label>
+                <textarea id="comments" name="comments"></textarea>
             </div>
             <div>
-                <input type="checkbox" name="other" id="other">
-                <label for="other">Other</label>
+                <label for="date">Birthdate</label>
+                <input type="date" name="date" id="date">
             </div>
-        </div>
-        <div>
-            <label for="comments">Questions, Comments, and Concerns?<br></label>
-            <textarea id="comments" name="comments"></textarea>
-        </div>
-        <div>
-            <label for="date">Birthdate</label>
-            <input type="date" name="date" id="date">
-        </div>
-    </div>
-    <button type="reset">Reset</button>
-    <button type="submit">Submit</button>
-    </form>
+            </div>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </form>
     </main>
+    <script src="../scripts/nav-bar.js"></script>
     <script src="../scripts/results.js"></script>
 </body>
+
 </html>

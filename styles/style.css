@@ -1,6 +1,6 @@
 /* Media for a Desktop Screen */
 @media (min-width: 576px) {
-    
+
     body {
         font-family: Arial, Helvetica, sans-serif;
         background-repeat: no-repeat;
@@ -8,14 +8,14 @@
         background-image: url(background.jpg);
         background-position: center;
     }
-    
+
     main {
         height: auto;
         width: 100%;
         display: grid;
         grid-template-columns: 30% 40% 30%;
     }
-    
+
     /* This is an ID selector */
     #profile-pic {
         width: 12vw;
@@ -25,28 +25,28 @@
         margin: 0% auto 0%;
         grid-column: 2/3;
     }
-    
+
     main h1 {
-        color:#0795C3;
+        color: #0795C3;
         grid-column: 2/3;
         margin: 1% auto;
         border-bottom: .2em solid orange;
     }
-    
+
     main h2 {
         grid-column: 2/3;
         margin: 3% auto;
         font-style: italic;
         color: #888888
     }
-    
+
     .small-text {
         grid-column: 2/3;
         color: #888888;
         font-size: .51vw;
         margin: 13% auto 0%;
     }
-    
+
     main button {
         grid-column: 2/3;
         margin: 3% auto;
@@ -65,12 +65,12 @@
         font-style: italic;
         border: white 1px solid;
     }
-    
+
     #portfolio a:link {
         text-decoration: none;
         color: #0795C3;
     }
-    
+
     #portfolio a:visited {
         text-decoration: none;
         color: #0795C3;
@@ -82,14 +82,14 @@
     body {
         font-family: Arial, Helvetica, sans-serif;
     }
-    
+
     main {
         height: auto;
         width: 100%;
         display: grid;
         grid-template-columns: 30% 40% 30%;
     }
-    
+
     /* This is an ID selector */
     #profile-pic {
         width: 12vw;
@@ -99,28 +99,28 @@
         margin: 0% auto 0%;
         grid-column: 2/3;
     }
-    
+
     main h1 {
-        color:#0795C3;
+        color: #0795C3;
         grid-column: 2/3;
         margin: 1% auto;
         border-bottom: .2em solid orange;
     }
-    
+
     main h2 {
         grid-column: 2/3;
         margin: 3% auto;
         font-style: italic;
         color: #888888
     }
-    
+
     .small-text {
         grid-column: 2/3;
         color: #888888;
         font-size: .51vw;
         margin: 13% auto 0%;
     }
-    
+
     main button {
         grid-column: 2/3;
         margin: 3% auto;
@@ -139,12 +139,12 @@
         font-style: italic;
         border: white 1px solid;
     }
-    
+
     #portfolio a:link {
         text-decoration: none;
         color: #0795C3;
     }
-    
+
     #portfolio a:visited {
         text-decoration: none;
         color: #0795C3;
