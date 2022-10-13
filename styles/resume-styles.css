@@ -1,145 +1,106 @@
 @media (min-width: 576px) {
+    header {
+        z-index: 2;
+        position: relative;
+    }
+
     main {
-        height: 100vh;
         width: 33%;
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 4fr 1.5fr 2fr 1fr 2fr 2fr 2fr;
         font-family: 'Montserrat', sans-serif;
         margin-left: auto;
         margin-right: auto;
+        z-index: 1;
+        
     }
 
-    #Left {
-        background-color: #bbb9f6;
-    }
-
-    #Right {
-        background-color: #e4e3f1;
-    }
-
-    .picture {
-        /* background-color: lime; */
-        grid-column: 1/2;
-        grid-row: 1/2;
-        align-content: center;
-        border-top-left-radius: 5%;
-    }
-
-    .picture div {
-        width: 350px;
-        height: 350px;
+    .top-content {
+        height: 100vh;
+        display: grid;
+        background: linear-gradient(to bottom left, white 5%, #E9B9FF 5% 8%, 
+        #CB8BE5 8% 14%, #8537A5 14% 24%, 
+        #690990 24% 90%, #222222 90% 100%) 
+        no-repeat center center fixed;
         position: absolute;
-        overflow: hidden;
-        border-radius: 50%;
-        margin: 10px auto;
+        top: 0;
+        left: 0;
+        width: 100%;
+        grid-template-columns: 1fr min(80vw, 125ch) 1fr;
     }
 
-    .picture img {
-        display: inline;
-        margin: auto 0;
-        margin-left: 15%;
+    .main-info {
+        background-color: rgba(255,255,255,0.2);
+        backdrop-filter: blur(10px);
+        max-height: 60vh;
+        max-width: 10vw;
+        grid-column: 2 / 2;
+        top: 15vh;
+        position: relative;
+        border: white 2px solid;
+        border-radius: 30px 0px 30px 0px;
+        width: 100%;
+        min-width: 51ch;
+        max-width: 150ch;
+        height: min(70vh, 50vw);
+        grid-template-columns: 50% 50%;
+        /* display: grid; */
+    }
+
+    #professional-img {
+        position: relative;
         height: 100%;
-        width: auto;
-        clip-path: circle();
+        float: left;
+        margin-right: 1.2em;
+        border: 1px;
+        border-radius: 30px 0px 0px 0px;
+        grid-column: 1/2;
+        display: grid;
     }
 
     .name {
-        /* background-color: limegreen; */
-        grid-column: 1/2;
-        grid-row: 2/3;
-    }
-
-    .social {
-        /* background-color: green; */
-        grid-column: 1/2;
-        grid-row: 3/5;
-    }
-
-    .skills {
-        /* background-color: darkgreen; */
-        grid-column: 1/2;
-        grid-row: 5/7;
-        border-bottom-left-radius: 5%;
-    }
-
-    .work-exp {
-        /* background-color: lightblue; */
-        grid-column: 2/3;
-        grid-row: 1/4;
-        border-top-right-radius: 5%;
-    }
-
-    .edu-hist {
-        /* background-color: skyblue; */
-        grid-column: 2/3;
-        grid-row: 4/6;
-    }
-
-    .certs {
-        /* background-color: cyan; */
-        grid-column: 2/3;
-        grid-row: 6/7;
-        border-bottom-right-radius: 5%;
-    }
-
-    .name h2 {
-        font-size: x-large;
-        margin-left: 15px;
+        font-size: 5em;
         margin-bottom: 0;
     }
 
-    .name h3 {
-        font-size: large;
-        margin-left: 15px;
-        margin-top: 5px;
-        text-indent: 15px;
-    }
-
-    #Left h1 {
-        text-align: left;
-        margin-left: 15px;
-        font-weight: 1000;
-        font-size: larger;
-    }
-
-    #Right h1 {
+    .social-info {
         text-align: right;
-        margin-left: 30px;
-        margin-top: 25px;
-        margin-bottom: 0px;
-        background-color: aliceblue;
-        padding-right: 5px;
-        padding-top: 25px;
-        padding-bottom: 0px;
-        font-weight: 1000;
-        font-size: larger;
-        border-top-left-radius: 100%;
-        height: 35px;
+        margin-right: 6.5%;
+        grid-column: 2/3;
+        display: grid;
+    }
+    
+    .socials{
+        list-style-type: none;
     }
 
-    .social p {
-        margin-left: 15px;
+    .socials li:not(.location) {
+        margin-top: 7%;
+        margin-bottom: 7%;
+        border-top: #222222 7px solid;
     }
 
-    main a:link {
-        color: blue;
-        text-decoration: none;
+    .socials .location{
+        font-size: 3.5em;
+        margin-top: 0%;
     }
 
-    main a:visited {
-        color: blue;
-        text-decoration: none;
-    }
-
-    main a:hover {
-        color: cyan;
+    main .socials span:not(li.location span){
+        font-size: 2.5em;
         font-style: italic;
     }
 
-    main a:active {
-        color: red;
+    .socials a,.socials a:link,.socials a:visited {
+        font-size: 1.4em;
+        transition: all .1s ease;
+        text-decoration: none;
+        color: #E9B9FF;
     }
+
+    .socials a:hover{
+        transition: all .1s ease;
+        color: white;
+    }
+
 }
 
 @media (max-width: 576px) {
@@ -152,136 +113,5 @@
         font-family: 'Montserrat', sans-serif;
         margin-left: auto;
         margin-right: auto;
-    }
-
-    #Left {
-        background-color: #bbb9f6;
-    }
-
-    #Right {
-        background-color: #e4e3f1;
-    }
-
-    .picture {
-        /* background-color: lime; */
-        grid-column: 1/2;
-        grid-row: 1/2;
-        align-content: center;
-        border-top-left-radius: 5%;
-    }
-
-    .picture div {
-        width: 350px;
-        height: 350px;
-        position: absolute;
-        overflow: hidden;
-        border-radius: 50%;
-        margin: 10px auto;
-    }
-
-    .picture img {
-        display: inline;
-        margin: auto 0;
-        margin-left: 15%;
-        height: 100%;
-        width: auto;
-        clip-path: circle();
-    }
-
-    .name {
-        /* background-color: limegreen; */
-        grid-column: 1/2;
-        grid-row: 2/3;
-    }
-
-    .social {
-        /* background-color: green; */
-        grid-column: 1/2;
-        grid-row: 3/5;
-    }
-
-    .skills {
-        /* background-color: darkgreen; */
-        grid-column: 1/2;
-        grid-row: 5/7;
-        border-bottom-left-radius: 5%;
-    }
-
-    .work-exp {
-        /* background-color: lightblue; */
-        grid-column: 2/3;
-        grid-row: 1/4;
-        border-top-right-radius: 5%;
-    }
-
-    .edu-hist {
-        /* background-color: skyblue; */
-        grid-column: 2/3;
-        grid-row: 4/6;
-    }
-
-    .certs {
-        /* background-color: cyan; */
-        grid-column: 2/3;
-        grid-row: 6/7;
-        border-bottom-right-radius: 5%;
-    }
-
-    .name h2 {
-        font-size: x-large;
-        margin-left: 15px;
-        margin-bottom: 0;
-    }
-
-    .name h3 {
-        font-size: large;
-        margin-left: 15px;
-        margin-top: 5px;
-        text-indent: 15px;
-    }
-
-    #Left h1 {
-        text-align: left;
-        margin-left: 15px;
-        font-weight: 1000;
-        font-size: larger;
-    }
-
-    #Right h1 {
-        text-align: right;
-        margin-left: 30px;
-        margin-top: 25px;
-        margin-bottom: 0px;
-        background-color: aliceblue;
-        padding-right: 5px;
-        padding-top: 25px;
-        padding-bottom: 0px;
-        font-weight: 1000;
-        font-size: larger;
-        border-top-left-radius: 100%;
-        height: 35px;
-    }
-
-    .social p {
-        margin-left: 15px;
-    }
-
-    main a:link {
-        color: blue;
-        text-decoration: none;
-    }
-
-    main a:visited {
-        color: blue;
-        text-decoration: none;
-    }
-
-    main a:hover {
-        color: cyan;
-        font-style: italic;
-    }
-
-    main a:active {
-        color: red;
     }
 }
