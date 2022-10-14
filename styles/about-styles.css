@@ -6,7 +6,10 @@
 /* Media for a PC */
 @media (min-width: 576px) {
     body {
-        background-color: lightblue;
+        background: linear-gradient(to bottom left, white 8%, #E9B9FF 8% 18%, 
+        #CB8BE5 18% 25%, #8537A5 25% 74%, 
+        #690990 74% 93%, #222222 93% 100%) 
+        no-repeat center center fixed;
     }
 
     main {
@@ -43,6 +46,38 @@
     .bottom-part {
         /* border: black 1px solid; */
         font-size: 7ch;
+    }
+    
+    .carousel-inner {
+        height: 50vh;
+        width: 50vw;
+        text-align: center;
+    }
+
+    .carousel-inner p, .carousel-inner h5{
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .carousel-inner p {
+        font-size: .5em;
+    }
+
+    .carousel-inner h5{
+        font-size: 1em;
+    }
+
+    .carousel {
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    .carousel-indicators {
+        background-color: #222222;
+    }
+
+    .carousel-indicators .active {
+        background-color: #690990;
     }
 }
 

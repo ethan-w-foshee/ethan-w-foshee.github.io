@@ -15,7 +15,7 @@ class Header extends HTMLElement {
                     src="https://cdn.evbuc.com/eventlogos/188084824/acastandardcirclefullname.png"
                     alt="austin coding academy logo"></a>
             <a id="has-border-darker" class="navButton" href="../pages/resume.html">Resume</a>
-            <a id="has-border-dark" class="navButton" href="../pages/about.html">About Me</a>
+            <a id="has-border-dark" class="navButton" href="../pages/about.html">Portfolio</a>
             <a id="has-border-lighter" class="navButton" href="https://medium.com/@ethan.w.foshee">My Blog</a>
             <a id="has-border-light" class="navButton" href="../pages/contact.html">Contact Me</a>
         </nav>
