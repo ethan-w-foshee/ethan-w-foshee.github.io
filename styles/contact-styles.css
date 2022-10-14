@@ -1,43 +1,61 @@
 * {
-    font-family: 'Lucida Sans';
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /* Media for a PC */
 @media (min-width: 576px) {
     body {
-        color: darkblue;
-        background-image: url(./contact-background.jpg);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-color: lightblue;
+        background: linear-gradient(to bottom left, white 8%, #E9B9FF 8% 58%, 
+        #CB8BE5 58% 69%, #8537A5 69% 82%, 
+        #690990 82% 91%, #222222 91% 100%) 
+        no-repeat center center fixed;
     }
 
-    form {
-        background-image: url(./clipboard.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-        padding: 4ch;
-        padding-top: 18ch;
-        height: 98ch;
-        width: 25%;
-        margin: auto;
-        font-size: contain;
-        min-width: 57ch;
+    main {
+        text-align: center;
     }
 
-    form>* {
-        margin-top: 4ch;
+    main h1{
+        font-weight: 500;
+        text-decoration: underline;
+        font-size: 5em;
     }
 
-    /* body div{
-        border: darkred 2px solid;
+    .socials {
+        list-style-type: none;
+        font-size: 3em;
+        position: relative;
+        padding-inline-start: 0px;
     }
 
-    #hdykm div{
-        border: black 1px solid;
-    } */
+    .socials li {
+        position: static;
+        width: auto;
+        z-index: 0;
+    }
+
+    .sub-social img {
+        transition: all 0.05s linear;
+        height: 7vh;
+        border: 1px;
+        border-radius: 15px;
+        z-index: 2;
+        position: relative;
+    }
+
+    .sub-social img:hover {
+        transform: scale(1.5);
+        transform-origin: top;
+    }
+
+    .frosted {
+        background-color: rgba(255, 255, 255, .25);
+        backdrop-filter: blur(25px);
+        border: 1vw;
+        border-radius: 1vw;
+        margin-left: 35vw;
+        margin-right: 35vw;
+    }
 }
 
 /* Media for a Phone */

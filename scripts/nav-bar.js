@@ -29,7 +29,13 @@ class Footer extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
         <footer>
-            <a class="small-text" href="https://austincodingacademy.com/">© Austin Coding Academy</a>
+            <div class="footer-socials">
+                Different Socials:
+                <a href="https://linkedin.com/in/ethan-foshee/">LinkedIn</a>
+                <a href="https://www.instagram.com/foshinithemagician/">Instagram</a>
+                <a href="https://www.facebook.com/ethan.foshee.90/">Facebook</a>
+                <a href="https://discord.gg/ZdzznMQ">Discord Server</a>
+            </div>
         </footer>
         `
     }

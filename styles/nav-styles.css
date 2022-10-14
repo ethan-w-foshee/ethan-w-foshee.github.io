@@ -73,7 +73,7 @@
 
     #logo,
     #logo img {
-        animation: spin linear 5s;
+        animation: spin ease-in-out 1s;
         animation-iteration-count: infinite;
     }
 
@@ -91,6 +91,16 @@
 
     footer {
         z-index: 1;
+        bottom: 0;
+        width: 100vw;
+        height: 3vh;
+        position: absolute;
+        background-color: white;
+        text-align: center;
+    }
+
+    .footer-socials {
+        font-size: 180%;
     }
 }
 
@@ -207,12 +217,12 @@
 
 @keyframes spin {
     0%{
-        transform: rotate(0deg);
+        transform: translateY(4px);
     }
     50%{
-        
+        transform: translateY(-4px);
     }
     100%{
-        transform: rotate(360deg);
+        transform: translateY(4px);
     }
 }

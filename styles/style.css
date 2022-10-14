@@ -18,16 +18,19 @@
     }
 
     #profile-pic {
-        width: 12vw;
-        height: 15vw;
-        border-radius: 50% 50%;
-        border: solid orange 2px;
-        margin: 0% auto 0%;
+        width: 25vw;
+        height: 25vw;
+        border-radius: 1vw;
+        margin: auto;
+        margin-left: 15%;
         grid-column: 1/2;
+        transform: rotate(180deg);
+        transform: scaleX(-1);
+        outline: #E9B9FF 50px solid;
     }
 
     #name {
-        color: #0795C3;
+        color: #222222;
         margin: 1% auto;
         font-size: calc(50vw / 16);
     }
