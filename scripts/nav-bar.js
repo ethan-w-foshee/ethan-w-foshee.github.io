@@ -12,7 +12,7 @@ class Header extends HTMLElement {
         <header>
         <nav>
             <a href="../index.html" id="logo"><img
-                    src="https://cdn.evbuc.com/eventlogos/188084824/acastandardcirclefullname.png"
+                    src="../image/Home Logo.png"
                     alt="austin coding academy logo"></a>
             <a id="has-border-darker" class="navButton" href="../pages/resume.html">Resume</a>
             <a id="has-border-dark" class="navButton" href="../pages/about.html">Portfolio</a>
