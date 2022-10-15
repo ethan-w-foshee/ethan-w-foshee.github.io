@@ -10,11 +10,7 @@
         #CB8BE5 18% 25%, #8537A5 25% 74%, 
         #690990 74% 93%, #222222 93% 100%) 
         no-repeat center center fixed;
-    }
-
-    main {
-        height: 100ch;
-        /* border: 3ch red solid; */
+        height: auto;
     }
 
     .top-bar h1 {
@@ -33,7 +29,7 @@
     }
 
     .top-bar {
-        height: 60ch;
+        height: 59ch;
         padding: 0;
         margin: 0;
         margin-top: -10%;

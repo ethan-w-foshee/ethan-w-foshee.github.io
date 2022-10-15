@@ -1,31 +1,31 @@
 @media (min-width: 576px) {
-    header, footer{
-        z-index: 1;
-        position: relative;
+    header {
+        position: absolute;
+    }
+
+    body{
+        background: linear-gradient(to bottom left, white 5%, #E9B9FF 5% 8%, 
+        #CB8BE5 8% 14%, #8537A5 14% 24%, 
+        #690990 24% 90%, #222222 90% 100%) 
+        no-repeat center center fixed;
     }
 
     main {
-        width: 33%;
         display: grid;
         font-family: 'Montserrat', sans-serif;
         margin-left: auto;
         margin-right: auto;
         z-index: 1;
-        
+        grid-template-rows: 100vh 80%;
     }
 
     .top-content {
         height: 100vh;
         display: grid;
-        background: linear-gradient(to bottom left, white 5%, #E9B9FF 5% 8%, 
-        #CB8BE5 8% 14%, #8537A5 14% 24%, 
-        #690990 24% 90%, #222222 90% 100%) 
-        no-repeat center center fixed;
-        position: absolute;
-        top: 0;
-        left: 0;
+        /* position: absolute; */
         width: 100%;
         grid-template-columns: 1fr min(80vw, 125ch) 1fr;
+        grid-row: 1/2;
     }
 
     .main-info {
@@ -33,7 +33,7 @@
         backdrop-filter: blur(10px);
         max-height: 60vh;
         max-width: 10vw;
-        grid-column: 2 / 2;
+        grid-column: 2/2;
         top: 15vh;
         position: relative;
         border: white 2px solid;
@@ -102,9 +102,42 @@
     }
 
     .bottom-content{
-        
+        background-color: lightgray;
+        border-top: gray 5ch solid;
+        grid-row: 2/3;
+        height: 100vh;
+        grid-template-columns: 50% 50%;
+        display: grid;
+        padding: 1% 13%;
     }
 
+    .left-resume {
+        grid-column: 1/2;
+    }
+
+    .right-resume {
+        grid-column: 2/3;
+    }
+    
+    .right-resume, .left-resume {
+        height: auto;
+        padding: 5%;
+        margin: 2%;
+        background-color: white;
+    }
+
+    .right-resume h1, .left-resume h1{
+        width: 100%;
+        border: #CB8BE5 2px solid;
+    }
+    
+    .key-header:not(ul) {
+        font-size: xx-large;
+    }
+
+    .key-header ul {
+        font-size: .8em;
+    }
 }
 
 @media (max-width: 576px) {
