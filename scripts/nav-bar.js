@@ -16,7 +16,7 @@ class Header extends HTMLElement {
         <nav>
             <a href="../index.html" id="logo"><img
                     src="../image/Home Logo.png"
-                    alt="austin coding academy logo"></a>
+                    alt="floating space pirate"></a>
             <a id="has-border-darker" class="navButton" href="../pages/resume.html">Resume</a>
             <a id="has-border-dark" class="navButton" href="../pages/portfolio.html">Portfolio</a>
             <a id="has-border-lighter" class="navButton" href="https://medium.com/@ethan.w.foshee">My Blog</a>
