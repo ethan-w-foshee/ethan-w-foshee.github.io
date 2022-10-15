@@ -116,8 +116,6 @@
         margin: 0;
         padding: 0;
         z-index: 10;
-        overflow-y: scroll;
-        width: 70%;
     }
 
     .navButton {
@@ -130,20 +128,22 @@
         display: block;
     }
 
-    .logo,
-    .logo img {
+    #logo,
+    #logo img {
         background-color: #AAAAAA;
         width: 290px;
+        animation: spin ease-in-out 1s;
+        animation-iteration-count: infinite;
     }
 
-    img {
+    nav img {
         width: 288px;
     }
 
     nav {
         width: 290px;
         transform: translateX(-240px);
-        z-index: 1;
+        z-index: 10;
         position: absolute;
         animation: nav-close 280ms ease; 
         top: 0;
@@ -164,10 +164,26 @@
         height: 100%;
         width: 290px;
         transform: translateX(-240px);
-        background-color: #444444;
         z-index: 100;
         animation: nav-close 280ms ease; 
-        top: 1;
+        top: 10;
+        background-color: rgba(1, 1, 1, 0);
+    }
+
+    #graybox {
+        display: block;
+        position: absolute;
+        height: 100%;
+        width: 290px;
+        transform: translateX(-240px);
+        background-color: #444444;
+        z-index: 1;
+        animation: nav-close 280ms ease; 
+        top: 10;
+    }
+
+    #graybox.grayboxOpen {
+        display: none;
     }
 
     #tapBox.tapBoxOpen{
@@ -176,6 +192,7 @@
         animation: nav-open 280ms ease;
         transform: translateX(0);
         z-index: 1;
+        background-color: #444444;
     }
 
     nav.open {
@@ -188,6 +205,10 @@
         animation: nav-open 280ms ease;
         width: 100%;
         transform: translateX(0);
+    }
+
+    footer {
+        display: none;
     }
 }
 

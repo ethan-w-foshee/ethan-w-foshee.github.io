@@ -2,7 +2,6 @@
 @media (min-width: 576px) {
 
     body {
-        font-family: Arial, Helvetica, sans-serif;
         background: linear-gradient(to bottom left, white 12%, #E9B9FF 8% 25%, 
         #CB8BE5 25% 48%, #8537A5 48% 67%, 
         #690990 67% 85%, #222222 85% 100%) 
@@ -66,47 +65,54 @@
 /* Media for mobile */
 @media (max-width: 576px) {
     body {
-        font-family: Arial, Helvetica, sans-serif;
-        background: linear-gradient(#E9B9FF 20%, 
-        #CB8BE5 20% 40%, #8537A5 40% 60%, 
-        #690990 60% 80%, #222222 80% 100%) no-repeat center center fixed;
+        background: linear-gradient(white 5%,#E9B9FF 5% 40%, 
+        #CB8BE5 40% 62%, #8537A5 62% 75%, 
+        #690990 75% 98%, #222222 98% 100%) no-repeat center center fixed;
     }
 
     main {
         height: auto;
-        width: 100%;
-        display: grid;
-        grid-template-columns: 30% 40% 30%;
+        width: 80%;
+        margin-left: auto;
+        margin-right: 5%;
     }
 
     /* This is an ID selector */
     #profile-pic {
-        width: 12vw;
-        height: 15vw;
-        border-radius: 50% 50%;
-        border: solid orange 2px;
-        margin: 0% auto 0%;
-        grid-column: 2/3;
+        height: 33vh;
+        margin-left: 5%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        border-radius: 5%;
+        outline: #690990 15px solid;
+        transform: rotate(180deg);
+        transform: scaleX(-1);
     }
 
-    main h1 {
-        color: #0795C3;
-        grid-column: 2/3;
+    #name {
+        color: #222222;
         margin: 1% auto;
-        border-bottom: .2em solid orange;
     }
 
-    main h2 {
-        grid-column: 2/3;
+    #title {
         margin: 3% auto;
         font-style: italic;
-        color: #888888
+        color: #222222;
+        border-bottom: 3px solid;
     }
 
-    .small-text {
-        grid-column: 2/3;
-        color: #888888;
-        font-size: .51vw;
+    #about-me {
+        color: white;
+        font-size: 4.3vw;
         margin: 13% auto 0%;
+    }
+
+    .frosted {
+        background-color: rgba(255, 255, 255, .25);
+        backdrop-filter: blur(25px);
+        grid-column: 3/4;
+        padding: 5%;
+        border: 15px;
+        border-radius: 5%;
     }
 }

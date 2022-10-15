@@ -138,8 +138,27 @@
     .key-header ul {
         font-size: .8em;
     }
+    
+    .mobile {
+        display: none;
+    }
 }
 
 @media (max-width: 576px) {
-    
+    body {
+        background: linear-gradient(white 5%,#E9B9FF 5% 40%, 
+        #CB8BE5 40% 62%, #8537A5 62% 75%, 
+        #690990 75% 98%, #222222 98% 100%) no-repeat center center fixed;
+    }
+
+    .mobile {
+        display: block;
+        margin-left: 15%;
+        margin-top: -6%;
+        padding: none;
+    }
+
+    .top-content, .bottom-content{
+        display: none;
+    }
 }
