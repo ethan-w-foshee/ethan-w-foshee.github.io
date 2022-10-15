@@ -17,10 +17,10 @@ class Header extends HTMLElement {
             <a href="../index.html" id="logo"><img
                     src="../image/Home Logo.png"
                     alt="floating space pirate"></a>
-            <a id="has-border-darker" class="navButton" href="../pages/resume.html">Resume</a>
-            <a id="has-border-dark" class="navButton" href="../pages/portfolio.html">Portfolio</a>
+            <a id="has-border-darker" class="navButton" href="/pages/resume.html">Resume</a>
+            <a id="has-border-dark" class="navButton" href="/pages/portfolio.html">Portfolio</a>
             <a id="has-border-lighter" class="navButton" href="https://medium.com/@ethan.w.foshee">My Blog</a>
-            <a id="has-border-light" class="navButton" href="../pages/contact.html">Contact Me</a>
+            <a id="has-border-light" class="navButton" href="/pages/contact.html">Contact Me</a>
         </nav>
         <div id="graybox"></div>
         <div id="tapBox" onclick="openNav()"></div>
