@@ -1,11 +1,7 @@
-* {
-    box-sizing: border-box;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
 
 /* Media for a PC */
 @media (min-width: 576px) {
-    body {
+    #portbody {
         background: linear-gradient(to bottom left, white 8%, #E9B9FF 8% 18%, 
         #CB8BE5 18% 25%, #8537A5 25% 74%, 
         #690990 74% 93%, #222222 93% 100%) 
@@ -21,7 +17,7 @@
         margin-bottom: 50%;
     }
 
-    main p {
+    #portmain p {
         text-align: center;
         max-width: 75%;
         margin-left: 15%;

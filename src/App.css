@@ -1,118 +1,12 @@
-/* Media for a Desktop Screen */
-@media (min-width: 576px) {
-
-  body {
-      background: linear-gradient(to bottom left, white 12%, #E9B9FF 8% 25%, 
-      #CB8BE5 25% 48%, #8537A5 48% 67%, 
-      #690990 67% 85%, #222222 85% 100%) 
-      no-repeat center center fixed;
-  }
-
-  main {
-      height: 55vh;
-      width: 100%;
-      display: grid;
-      grid-template-columns: 20% 20% 50%;
-      margin-top: 5%;
-  }
-
-  #profile-pic {
-      width: 25vw;
-      height: 25vw;
-      border-radius: 1vw;
-      margin: auto;
-      margin-left: 15%;
-      grid-column: 1/2;
-      transform: rotate(180deg);
-      transform: scaleX(-1);
-      outline: #E9B9FF 50px solid;
-  }
-
-  #name {
-      color: #222222;
-      margin: 1% auto;
-      font-size: calc(50vw / 16);
-  }
-
-  #about-me{
-      color: white;
-      font-size: 13pt;
-  }
-
-  #title {
-      margin: 3% auto;
-      font-style: italic;
-      color: black
-  }
-
-  .frosted {
-      background-color: rgba(255, 255, 255, .25);
-      backdrop-filter: blur(25px);
-      grid-column: 3/4;
-      padding: 5%;
-      border: 1vw;
-      border-radius: 1vw;
-  }
-
-  .small-text {
-      color: #888888;
-      font-size: .51vw;
-      margin: 13% auto 0%;
-  }
-
+main {
+    margin: 0;
 }
 
-/* Media for mobile */
-@media (max-width: 576px) {
-  body {
-      background: linear-gradient(white 5%,#E9B9FF 5% 40%, 
-      #CB8BE5 40% 62%, #8537A5 62% 75%, 
-      #690990 75% 98%, #222222 98% 100%) no-repeat center center fixed;
-  }
+body {
+    margin: 0;
+}
 
-  main {
-      height: auto;
-      width: 80%;
-      margin-left: auto;
-      margin-right: 5%;
-  }
-
-  /* This is an ID selector */
-  #profile-pic {
-      height: 33vh;
-      margin-left: 5%;
-      margin-top: 10%;
-      margin-bottom: 10%;
-      border-radius: 5%;
-      outline: #690990 15px solid;
-      transform: rotate(180deg);
-      transform: scaleX(-1);
-  }
-
-  #name {
-      color: #222222;
-      margin: 1% auto;
-  }
-
-  #title {
-      margin: 3% auto;
-      font-style: italic;
-      color: #222222;
-      border-bottom: 3px solid;
-  }
-
-  #about-me {
-      color: white;
-      font-size: 4.3vw;
-      margin: 13% auto 0%;
-  }
-
-  .frosted {
-      background-color: rgba(255, 255, 255, .25);
-      backdrop-filter: blur(25px);
-      grid-column: 3/4;
-      padding: 5%;
-      border: 15px;
-      border-radius: 5%;
-  }
+* {
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }

@@ -3,14 +3,14 @@
         position: absolute;
     }
 
-    body{
+    #resumebody{
         background: linear-gradient(to bottom left, white 5%, #E9B9FF 5% 8%, 
         #CB8BE5 8% 14%, #8537A5 14% 24%, 
         #690990 24% 90%, #222222 90% 100%) 
         no-repeat center center fixed;
     }
 
-    main {
+    #resumemain {
         display: grid;
         font-family: 'Montserrat', sans-serif;
         margin-left: auto;
