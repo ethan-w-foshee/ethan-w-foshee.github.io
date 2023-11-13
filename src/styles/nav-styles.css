@@ -1,8 +1,3 @@
-* {
-    box-sizing: border-box;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
 #has-border-darker {
     background: #999999;
     color: #690990;
@@ -29,14 +24,14 @@
         margin: 0;
     }
 
-    header {
+    #navHeader {
         width: 100%;
         height: 12vh;
         display: grid;
         z-index: 1;
     }
 
-    header span {
+    #navHeader span {
         display: inline-block;
         vertical-align: middle;
         line-height: normal;
@@ -44,7 +39,7 @@
 
     .navButton {
         transition: 0.25s ease;
-        height: 45%;
+        height: 18%;
         width: 100%;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 1.5vw;
@@ -54,7 +49,7 @@
 
     .navButton:hover {
         transition: 0.25s ease;
-        height: 75%;
+        height: 37%;
         padding-top: 10%;
     }
 
@@ -93,7 +88,7 @@
         z-index: 1;
         bottom: 0;
         width: 100%;
-        height: 3vh;
+        height: 5%;
         position: absolute;
         background-color: white;
         text-align: center;

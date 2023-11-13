@@ -1,29 +1,36 @@
+import discord from '../image/CC Black Outlined.png'
+import gmail from '../image/Gmail-logo.png'
+import facebook from '../image/Facebook-logo.png'
+import linkedIn from '../image/LinkedIn-logo.png'
+import insta from "../image/Instagram-Logo.png"
+import '../styles/contact-styles.css'
+
 function Contact() {
     return (
-        <body>
-            <main>
+        <body id='contact-body'>
+            <main id="contact-main">
                 <h1>Reach Out to Me!</h1>
-                <div class="frosted">
+                <div class="contact-frosted">
                     <ol class="socials">
                         <li id="discord">My Discord Server<br />
-                            <span class="sub-social"><a href="https://discord.gg/ZdzznMQ" target="_blank"><img
-                                src="/Web101-Foshee/image/CC Black Outlined.png" /></a></span>
+                            <span class="sub-social"><a href="https://discord.gg/ZdzznMQ" target="_blank">
+                                <img src={discord} alt='discord logo' /></a></span>
                         </li>
                         <li id="gmail">Email<br />
-                            <span class="sub-social"><a href="mailto:ethan.w.foshee@gmail.com" target="_blank"><img
-                                src="/Web101-Foshee/image/Gmail-logo.png" /></a></span>
+                            <span class="sub-social"><a href="mailto:ethan.w.foshee@gmail.com" target="_blank">
+                                <img src={gmail} alt='gmail logo'/></a></span>
                         </li>
                         <li id="facebook">Facebook<br />
-                            <span class="sub-social"><a href="https://www.facebook.com/ethan.foshee.90/" target="_blank"><img
-                                src="/Web101-Foshee/image/Facebook-logo.png" /></a></span>
+                            <span class="sub-social"><a href="https://www.facebook.com/ethan.foshee.90/" target="_blank">
+                                <img src={facebook} alt='facebook logo' /></a></span>
                         </li>
                         <li id="linkedin">LinkedIn<br />
-                            <span class="sub-social"><a href="https://www.linkedin.com/in/ethan-foshee/" target="_blank"><img
-                                src="/Web101-Foshee/image/LinkedIn-logo.png" /></a></span>
+                            <span class="sub-social"><a href="https://www.linkedin.com/in/ethan-foshee/" target="_blank">
+                                <img src={linkedIn} alt='linkedIn logo'/></a></span>
                         </li>
                         <li id="instagram">Instagram<br />
-                            <span class="sub-social"><a href="https://www.instagram.com/foshinithemagician/"
-                                target="_blank"><img src="/Web101-Foshee/image/Instagram-Logo.png" /></a></span>
+                            <span class="sub-social"><a href="https://www.instagram.com/foshinithemagician/" target="_blank">
+                                <img src={insta} alt='instagram logo'/></a></span>
                         </li>
                     </ol>
                 </div>

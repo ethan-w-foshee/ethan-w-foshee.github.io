@@ -1,13 +1,13 @@
-import { Link, useNavigate } from 'react-router-dom'
-// import '../styles/nav-styles.css'
+import { Link } from 'react-router-dom'
+import '../styles/nav-styles.css'
+import logo from '../image/Home Logo.png'
 
 function Header() {
-    const navigate = useNavigate()
     return (
-        <header>
+        <header id='navHeader'>
             <nav>
                 <Link to="/" id="logo"><img
-                    src="../image/Home Logo.png"
+                    src={logo}
                     alt="floating space pirate"></img></Link>
                 <Link to="/Resume" id="has-border-darker" class="navButton">Resume</Link>
                 <Link to="/Portfolio" id="has-border-dark" class="navButton">Portfolio</Link>

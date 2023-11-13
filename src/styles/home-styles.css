@@ -1,19 +1,19 @@
 /* Media for a Desktop Screen */
 @media (min-width: 576px) {
 
-    body {
+    #homebody {
         background: linear-gradient(to bottom left, white 12%, #E9B9FF 8% 25%, 
         #CB8BE5 25% 48%, #8537A5 48% 67%, 
         #690990 67% 85%, #222222 85% 100%) 
         no-repeat center center fixed;
+        margin: 0;
     }
 
-    main {
+    #homemain {
         height: 55vh;
         width: 100%;
         display: grid;
         grid-template-columns: 20% 20% 50%;
-        margin-top: 5%;
     }
 
     #profile-pic {
@@ -45,13 +45,14 @@
         color: black
     }
 
-    .frosted {
+    .main-frosted {
         background-color: rgba(255, 255, 255, .25);
         backdrop-filter: blur(25px);
         grid-column: 3/4;
         padding: 5%;
         border: 1vw;
         border-radius: 1vw;
+        margin: 0;
     }
 
     .small-text {
