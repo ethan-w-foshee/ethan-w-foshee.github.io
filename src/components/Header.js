@@ -24,11 +24,10 @@ function Footer() {
     return(
         <footer>
             <div class="footer-socials">
-                Different Socials:
-                <a href="https://linkedin.com/in/ethan-foshee/">LinkedIn</a>
-                <a href="https://www.instagram.com/foshinithemagician/">Instagram</a>
-                <a href="https://www.facebook.com/ethan.foshee.90/">Facebook</a>
-                <a href="https://discord.gg/ZdzznMQ">Discord Server</a>
+                <span class='foot-social'><a href="https://linkedin.com/in/ethan-foshee/">LinkedIn</a></span>
+                <span class='foot-social'><a href="https://www.instagram.com/foshinithemagician/">Instagram</a></span>
+                <span class='foot-social'><a href="https://www.facebook.com/ethan.foshee.90/">Facebook</a></span>
+                <span class='foot-social' id='foot-discord-social'><a href="https://discord.gg/ZdzznMQ">Discord Server</a></span>
             </div>
         </footer>
     )

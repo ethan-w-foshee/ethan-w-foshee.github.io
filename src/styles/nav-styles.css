@@ -20,10 +20,6 @@
 
 /* Media for a PC */
 @media (min-width: 576px) {
-    body {
-        margin: 0;
-    }
-
     #navHeader {
         width: 100%;
         height: 12vh;
@@ -49,7 +45,7 @@
 
     .navButton:hover {
         transition: 0.25s ease;
-        height: 37%;
+        height: 27%;
         padding-top: 10%;
     }
 
@@ -90,12 +86,39 @@
         width: 100%;
         height: 5%;
         position: absolute;
-        background-color: white;
-        text-align: center;
+        background-color: #444444;
+        text-align: left;
     }
 
     .footer-socials {
-        font-size: 180%;
+        color: #CB8BE5;
+        font-size: 1.8em;
+        padding: .1%;
+    }
+    
+    .foot-social {
+        margin: 2px;
+        /* border-right: 2px solid black; */
+        padding-right: 1%;
+    }
+
+    .foot-social>a {
+        color: #E9B9FF;
+        text-decoration: none;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .foot-social>a:visited{
+        color: #E9B9FF;
+    }
+
+    .foot-social>a:hover{
+        color: #dddddd
+    }
+
+    #foot-discord-social{
+        border-right: 0px
     }
 }
 
