@@ -4,7 +4,7 @@
         background: linear-gradient(to bottom left, white 8%, #E9B9FF 8% 58%, 
         #CB8BE5 58% 69%, #8537A5 69% 82%, 
         #690990 82% 91%, #222222 91% 100%) 
-        no-repeat center center fixed;  
+        no-repeat center center fixed;
     }
 
     #contact-main {
@@ -14,20 +14,24 @@
     #contact-main h1{
         font-weight: 500;
         text-decoration: underline;
-        font-size: 5em;
+        font-size: 4em;
     }
 
-    .socials {
+    .contact-socials {
         list-style-type: none;
-        font-size: 3em;
+        font-size: 2em;
         position: relative;
         padding-inline-start: 0px;
     }
 
-    .socials li {
+    .contact-socials li {
         position: relative;
         width: auto;
         z-index: 0;
+    }
+
+    .sub-social {
+        height: auto;
     }
 
     .sub-social img {
@@ -40,7 +44,7 @@
     }
 
     .sub-social img:hover {
-        transform: scale(1.5);
+        transform: scale(1.25);
         transform-origin: top;
     }
 
