@@ -22,7 +22,6 @@
     .top-content {
         height: 100vh;
         display: grid;
-        /* position: absolute; */
         width: 100%;
         grid-template-columns: 1fr min(80vw, 125ch) 1fr;
         grid-row: 1/2;
@@ -31,7 +30,7 @@
     .main-info {
         background-color: rgba(255,255,255,0.2);
         backdrop-filter: blur(10px);
-        max-height: 60vh;
+        max-height: 80vh;
         max-width: 10vw;
         grid-column: 2/2;
         top: 15vh;
@@ -58,8 +57,9 @@
     }
 
     .name {
-        font-size: 5em;
+        font-size: 4em;
         margin-bottom: 0;
+        margin-top: 0;
     }
 
     .social-info {
@@ -74,9 +74,9 @@
     }
 
     .socials li:not(.location) {
-        margin-top: 7%;
-        margin-bottom: 7%;
-        border-top: #222222 7px solid;
+        margin-top: 2.5%;
+        margin-bottom: 2.5%;
+        border-top: #222222 3px solid;
     }
 
     .socials .location{
@@ -85,7 +85,7 @@
     }
 
     main .socials span:not(li.location span){
-        font-size: 2.5em;
+        font-size: 1.65em;
         font-style: italic;
     }
 
