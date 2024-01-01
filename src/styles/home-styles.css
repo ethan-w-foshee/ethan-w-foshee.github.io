@@ -7,6 +7,9 @@
         #690990 67% 85%, #222222 85% 100%) 
         no-repeat center center fixed;
         margin: 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     }
 
     #homemain {
