@@ -43,7 +43,7 @@ function Resume() {
                 </div>
                 <div class="bottom-content">
                     <div class="left-resume">
-                        <div class="edu">
+                        <div class="edu" id="bottom-header">
                             <h1>Education</h1>
                             <p>
                                 <ul>
@@ -84,14 +84,14 @@ function Resume() {
                                     </li>
                                     <li id="aca-header" class="key-header">Austin Coding Academy
                                         <ul>
-                                            <li><i>Attended July 2022 to June of 2023 [Expected] </i>| Online</li>
-                                            <li>Learned HTML, CSS, and JavaScript</li>
+                                            <li><i>Attended July 2022 to July of 2023 </i>| Online</li>
+                                            <li>Learned HTML, CSS, JavaScript, ReactJS, NodeJS, SQL, and more!</li>
                                         </ul>
                                     </li>
                                 </ul>
                             </p>
                         </div>
-                        <div class="job">
+                        <div class="job" id="bottom-header">
                             <h1>Jobs</h1>
                             <ul>
                                 <li id="chapdesk-header" class="key-header">LCU's Chapdesk
@@ -112,7 +112,7 @@ function Resume() {
                         </div>
                     </div>
                     <div class="right-resume">
-                        <div class="skills">
+                        <div class="skills" id="bottom-header">
                             <h1>Skills</h1>
                             I have no clue what to put here
                         </div>
