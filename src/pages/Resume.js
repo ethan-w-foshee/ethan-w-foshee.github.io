@@ -1,5 +1,5 @@
 import '../styles/resume-styles.css'
-import '../image/Professional Photo.jpg'
+import profphoto from '../image/Professional Photo.jpg'
 
 function Resume() {
     return (
@@ -7,7 +7,7 @@ function Resume() {
             <main id='resumemain'>
                 <div class="top-content">
                     <div class="main-info">
-                        <img src="../image/Professional Photo.jpg" id="professional-img" alt="A professional looking man" />
+                        <img src={profphoto} id="professional-img" alt="A professional looking man" />
                         <div class="social-info">
                             <h1 class="name">Ethan Foshee</h1>
                             <ul class="socials">
@@ -24,7 +24,7 @@ function Resume() {
                                 <li class="phone">
                                     <span>Cell Phone:</span>
                                     <br />
-                                    <a href="tel:806-778-3654">(806)778-3654</a>
+                                    <a href="tel:806-778-3654">On Request</a>
                                 </li>
                                 <li class="linkedin">
                                     <span>LinkedIn Profile:</span>
@@ -43,7 +43,7 @@ function Resume() {
                 </div>
                 <div class="bottom-content">
                     <div class="left-resume">
-                        <div class="edu">
+                        <div class="edu" id="bottom-header">
                             <h1>Education</h1>
                             <p>
                                 <ul>
@@ -84,14 +84,14 @@ function Resume() {
                                     </li>
                                     <li id="aca-header" class="key-header">Austin Coding Academy
                                         <ul>
-                                            <li><i>Attended July 2022 to June of 2023 [Expected] </i>| Online</li>
-                                            <li>Learned HTML, CSS, and JavaScript</li>
+                                            <li><i>Attended July 2022 to July of 2023 </i>| Online</li>
+                                            <li>Learned HTML, CSS, JavaScript, ReactJS, NodeJS, SQL, and more!</li>
                                         </ul>
                                     </li>
                                 </ul>
                             </p>
                         </div>
-                        <div class="job">
+                        <div class="job" id="bottom-header">
                             <h1>Jobs</h1>
                             <ul>
                                 <li id="chapdesk-header" class="key-header">LCU's Chapdesk
@@ -112,7 +112,7 @@ function Resume() {
                         </div>
                     </div>
                     <div class="right-resume">
-                        <div class="skills">
+                        <div class="skills" id="bottom-header">
                             <h1>Skills</h1>
                             I have no clue what to put here
                         </div>
