@@ -65,10 +65,15 @@
         grid-template-columns: repeat(10, 10%);
     }
 
-    #logo,
-    #logo img {
-        animation: spin ease-in-out 1s;
+    #logoAgain, #logoAgain:visited {
+        color:#dddddd;
+    }
+
+    #logoAgain:hover {
+        /* color:#444444; */
+        animation: spin 1s ease-in-out;
         animation-iteration-count: infinite;
+        /* scale: 150% */
     }
 
     nav a:link {
@@ -259,12 +264,21 @@
 
 @keyframes spin {
     0%{
-        transform: translateY(4px);
+        /* transform: translateY(2px); */
+        color: #690990;
+    }
+    25%{
+        color: #CB8BE5
     }
     50%{
-        transform: translateY(-4px);
+        /* transform: translateY(-2px); */
+        color: #ffffff
+    }
+    75%{
+        color: #cb8be5
     }
     100%{
-        transform: translateY(4px);
+        /* transform: translateY(2px); */
+        color: #690990
     }
 }
