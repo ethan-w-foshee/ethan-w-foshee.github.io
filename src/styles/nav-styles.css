@@ -35,7 +35,7 @@
 
     .navButton {
         transition: 0.25s ease;
-        height: 18%;
+        height: 50%;
         width: 100%;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 1.5vw;
@@ -48,7 +48,7 @@
 
     .navButton:hover {
         transition: 0.25s ease;
-        height: 27%;
+        height: 80%;
         padding-top: 10%;
     }
 
