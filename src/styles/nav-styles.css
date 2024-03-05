@@ -65,10 +65,16 @@
         grid-template-columns: repeat(10, 10%);
     }
 
-    #logo,
-    #logo img {
-        animation: spin ease-in-out 1s;
+    #logoAgain,
+    #logoAgain:visited {
+        color: #dddddd;
+    }
+
+    #logoAgain:hover {
+        /* color:#444444; */
+        animation: spin 1s ease-in-out;
         animation-iteration-count: infinite;
+        /* scale: 150% */
     }
 
     nav a:link {
@@ -98,7 +104,7 @@
         font-size: 1.8em;
         padding: .1%;
     }
-    
+
     .foot-social {
         margin: 2px;
         /* border-right: 2px solid black; */
@@ -112,15 +118,15 @@
         margin-bottom: 0;
     }
 
-    .foot-social>a:visited{
+    .foot-social>a:visited {
         color: #E9B9FF;
     }
 
-    .foot-social>a:hover{
+    .foot-social>a:hover {
         color: #dddddd
     }
 
-    #foot-discord-social{
+    #foot-discord-social {
         border-right: 0px
     }
 }
@@ -166,7 +172,7 @@
         transform: translateX(-240px);
         z-index: 10;
         position: absolute;
-        animation: nav-close 280ms ease; 
+        animation: nav-close 280ms ease;
         top: 0;
         background-color: #AAAAAA;
     }
@@ -186,7 +192,7 @@
         width: 290px;
         transform: translateX(-240px);
         z-index: 100;
-        animation: nav-close 280ms ease; 
+        animation: nav-close 280ms ease;
         top: 10;
         background-color: rgba(1, 1, 1, 0);
     }
@@ -199,7 +205,7 @@
         transform: translateX(-240px);
         background-color: #444444;
         z-index: 1;
-        animation: nav-close 280ms ease; 
+        animation: nav-close 280ms ease;
         top: 10;
     }
 
@@ -207,7 +213,7 @@
         display: none;
     }
 
-    #tapBox.tapBoxOpen{
+    #tapBox.tapBoxOpen {
         width: 100%;
         top: 0;
         animation: nav-open 280ms ease;
@@ -237,9 +243,9 @@
     0% {
         transform: translateX(-240px);
     }
-    50% {
 
-    }
+    50% {}
+
     100% {
         transform: translateX(0);
     }
@@ -249,22 +255,36 @@
     0% {
         transform: translateX(0);
     }
-    50% {
 
-    }
+    50% {}
+
     100% {
         transform: translateX(-240px);
     }
 }
 
 @keyframes spin {
-    0%{
-        transform: translateY(4px);
+    0% {
+        /* transform: translateY(2px); */
+        color: #dddddd;
     }
-    50%{
-        transform: translateY(-4px);
+
+    25% {
+        color: #CB8BE5
     }
-    100%{
-        transform: translateY(4px);
+
+    50% {
+        /* transform: translateY(-2px); */
+        color: #690990;
+
+    }
+
+    75% {
+        color: #cb8be5
+    }
+
+    100% {
+        /* transform: translateY(2px); */
+        color: #dddddd;
     }
 }

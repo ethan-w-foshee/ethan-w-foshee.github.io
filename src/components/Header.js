@@ -1,14 +1,17 @@
 import { Link } from 'react-router-dom'
+import { Icon } from '@mui/material';
 import '../styles/nav-styles.css'
-import logo from '../image/Home Logo.png'
+// import logo from '../image/Home Logo.png'
+import logo from '@mui/icons-material/House';
 
 function Header() {
     return (
         <header id='navHeader'>
             <nav>
-                <Link to="/" id="logo"><img
-                    src={logo}
-                    alt="floating space pirate"></img></Link>
+                <Link to="/" id="logo"><Icon id="logoAgain"
+                    component={logo}
+                    sx={{fontSize:50}}
+                    ></Icon></Link>
                 <Link to="/Resume" id="has-border-darker" class="navButton">Resume</Link>
                 <Link to="/Portfolio" id="has-border-dark" class="navButton">Portfolio</Link>
                 <a id="has-border-lighter" class="navButton" href="https://medium.com/@ethan.w.foshee">My Blog</a>

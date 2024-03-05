@@ -15,15 +15,16 @@ function Home() {
             Freelance Web Developer
           </h2>
           <p id="about-me">
-            Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident,
-            sunt in culpa qui officia deserunt mollit anim id est laborum.
+            A full-stack developer diving into the world of technology with enthusiasm and a drive for learning. 
+            With a foundation in coding and a hunger for challenges, I'm committed to honing my skills and delivering quality results. 
+            My journey into the realm of development started with a genuine curiosity, and since then, 
+            I've been on a quest to master the craft, thriving on problem-solving and creative solutions. 
+            Every project I take on is an opportunity for growth and innovation, 
+            where I leverage dedication, perseverance, and a willingness to explore new technologies. 
+            Beyond coding, I'm always seeking avenues for personal and professional growth, 
+            whether it's through tech workshops or pursuing hobbies like photography. 
+            I'm excited to connect with fellow developers, collaborators, and tech enthusiasts, 
+            so feel free to reach out—I'm always open to new connections and opportunities!
           </p>
         </div>
       </main>
