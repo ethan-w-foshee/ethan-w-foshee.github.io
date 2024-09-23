@@ -12,7 +12,7 @@ function Resume() {
                             <h1 class="name">Ethan Foshee</h1>
                             <ul class="socials">
                                 <li class="location">
-                                    <span>Lubbock, Texas</span>
+                                    <span>Texas</span>
                                 </li>
                                 <li class="email">
                                     <span>Email:</span>
@@ -24,7 +24,7 @@ function Resume() {
                                 <li class="phone">
                                     <span>Cell Phone:</span>
                                     <br />
-                                    <a href="tel:806-778-3654">On Request</a>
+                                    <a href='./#/Resume'>On Request</a>
                                 </li>
                                 <li class="linkedin">
                                     <span>LinkedIn Profile:</span>
@@ -43,29 +43,55 @@ function Resume() {
                 </div>
                 <div class="bottom-content">
                     <div class="left-resume">
+                        <div class="job" id="bottom-header">
+                            <h1>Experiences</h1>
+                            <ul>
+                                <li id="chapdesk-header" class="key-header">LCU's Chapdesk
+                                    <ul>
+                                        <li><i>Worked for from August 2018 to September 2020 </i>| On College Campus</li>
+                                        <li>Lead shifts</li>
+                                        <li>Required fixing of hardware and software issues</li>
+                                    </ul>
+                                </li>
+                                <li id="protech-header" class="key-header">Pro Tech Audio Visual Security
+                                    <ul>
+                                        <li><i>Worked for from April 2021 to May 2022 </i>| In Person</li>
+                                        <li>Installed and Programmed Smart Home Systems</li>
+                                        <li>Installed Camera and Security Systems</li>
+                                    </ul>
+                                </li>
+                                <li id="lawnstarter-header" class="key-header">LawnStarter Fullstack Developer Intern
+                                    <ul>
+                                        <li><i>Worked from May 2023 to October 2023</i> | Remote Work</li>
+                                        <li>Worked on a team with 9 other individuals</li>
+                                        <li>Also worked on my own project by myself</li>
+                                        <li>Optimized customer dispute flow</li>
+                                    </ul>
+                                </li>
+                                <li id="edugen-header" class="key-header">EDUGEN Framework Developer
+                                    <ul>
+                                        <li><i>Developed from February 2024 to March 2024</i> | Remote Work</li>
+                                        <li>EDUGEN was created to help create curriculums for people to teach</li>
+                                        <li>Worked on a team with 4 other individuals</li>
+                                        <li>Created a framework which consisted of</li>
+                                        <ul>
+                                            <li>Vite and Tailwind</li>
+                                            <li>MongoDB</li>
+                                            <li>OpenAI</li>
+                                        </ul>
+                                    </ul>
+                                </li>
+                                <li id="aca-mentor" class="key-header">Austin Coding Academy Mentor
+                                    <ul>
+                                        <li><i>Ongoing, started in August 2024</i> | Remote Work</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
                         <div class="edu" id="bottom-header">
                             <h1>Education</h1>
                             <p>
                                 <ul>
-                                    <li id="highschool-header" class="key-header">
-                                        Southcrest Christian Highschool
-                                        <ul>
-                                            <li><i>Graduated Class May 25th of 2018 | Lubbock, Texas</i></li>
-                                            <li>Graduated 4th in Class</li>
-                                            <li>Above a 4.0 GPA</li>
-                                            <li>Participated in many extracurricular activites
-                                                <ul>
-                                                    <li>First Chair Trumpet</li>
-                                                    <li>Lead Robotics Team to 1st place my sophomore year</li>
-                                                    <li>Team Captain for Robotics my senior year</li>
-                                                    <li>Participated in Golf 3 years</li>
-                                                    <li>Participated in Track my senior year</li>
-                                                </ul>
-                                            </li>
-                                            <li>School Chaplin</li>
-                                            <li>Managed Audio/Visual for School Chapels my Junior and Senior years</li>
-                                        </ul>
-                                    </li>
                                     <li id="uni-header" class="key-header">Lubbock Christian University
                                         <ul>
                                             <li><i>Attended August 2018 to May 2021</i> | Lubbock Texas</li>
@@ -91,29 +117,10 @@ function Resume() {
                                 </ul>
                             </p>
                         </div>
-                        <div class="job" id="bottom-header">
-                            <h1>Jobs</h1>
-                            <ul>
-                                <li id="chapdesk-header" class="key-header">LCU's Chapdesk
-                                    <ul>
-                                        <li><i>Worked for from August 2018 to September 2020 </i>| On College Campus</li>
-                                        <li>Was a shift lead</li>
-                                        <li>Required fixing of hardware and software issues</li>
-                                    </ul>
-                                </li>
-                                <li id="protech-header" class="key-header">Pro Tech Audio Visual Security
-                                    <ul>
-                                        <li><i>Worked for from April 2021 to May 2022 </i>| In Person</li>
-                                        <li>Installed and Programmed Smart Home Systems</li>
-                                        <li>Installed Camera and Security Systems</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
                     </div>
                     <div class="right-resume">
                         <div class="skills" id="bottom-header">
-                            <h1>Skills</h1>
+                            <h1>About Me</h1>
                             I have no clue what to put here
                         </div>
                     </div>
