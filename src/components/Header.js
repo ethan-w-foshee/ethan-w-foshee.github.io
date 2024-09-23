@@ -18,7 +18,7 @@ function Header() {
                 <Link to="/Contact" id="has-border-light" class="navButton">Contact Me</Link>
             </nav>
             <div id="graybox"></div>
-            <div id="tapBox" onclick="openNav()"></div>
+            {/* <div id="tapBox" onClick="openNav()"></div> */}
         </header>
     )
 }
@@ -26,11 +26,11 @@ function Header() {
 function Footer() {
     return(
         <footer>
-            <div class="footer-socials">
-                <span class='foot-social'><a href="https://linkedin.com/in/ethan-foshee/">LinkedIn</a></span>
-                <span class='foot-social'><a href="https://www.instagram.com/foshinithemagician/">Instagram</a></span>
-                <span class='foot-social'><a href="https://www.facebook.com/ethan.foshee.90/">Facebook</a></span>
-                <span class='foot-social' id='foot-discord-social'><a href="https://discord.gg/ZdzznMQ">Discord Server</a></span>
+            <div className="footer-socials">
+                <span className='foot-social'><a href="https://linkedin.com/in/ethan-foshee/">LinkedIn</a></span>
+                <span className='foot-social'><a href="https://www.instagram.com/misterfoshee/">Instagram</a></span>
+                <span className='foot-social'><a href="https://www.facebook.com/ethan.foshee.90/">Facebook</a></span>
+                <span className='foot-social' id='foot-discord-social'><a href="https://discord.gg/ZdzznMQ">Discord Server</a></span>
             </div>
         </footer>
     )
