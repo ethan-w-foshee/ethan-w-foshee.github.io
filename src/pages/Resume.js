@@ -28,7 +28,7 @@ function Resume() {
                                 </li>
                                 <li class="linkedin">
                                     <span>LinkedIn Profile:</span>
-                                    <br />
+                                    <br/>
                                     <a class="linkedin"
                                         href="https://linkedin.com/in/ethan-foshee/">linkedin.com/in/ethan-foshee/</a>
                                 </li>
