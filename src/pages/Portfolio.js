@@ -1,18 +1,19 @@
 import '../styles/portfolio-styles.css'
+import NASA from '../image/NASA Web Thumbnail.png'
 
 function Portfolio() {
     return (
-        <body id="portbody">
+        <div id="portbody">
             <main id="portmain">
-                <div class="top-bar">
+                <div className="top-bar">
                     <h1>My Portfolio</h1>
                 </div>
-                <div class="pc-view">
+                <div>
                     <div>
                         <div>
                             <div>
                                 <a href="https://ethan-w-foshee.github.io/NASAlanding/"><img
-                                    src="/Web101-Foshee/image/NASA Web Thumbnail.png" alt="NASA Website" /></a>
+                                    src={NASA} alt="NASA Website" /></a>
                                 <div>
                                     <h5>My first website created</h5>
                                     <p>Created on August 28th, 2022</p>
@@ -45,7 +46,7 @@ function Portfolio() {
                             </div>
                             <div>
                                 <a href="https://ethan-w-foshee.github.io/hair-salon/"><img
-                                    src="/Web101-Foshee/image/Hair Salon thumbnail.png" alt="Hair Salon" /></a>
+                                    src="../image/Hair Salon thumbnail.png" alt="Hair Salon" /></a>
                                 <div >
                                     <h5>A Hair Salon Website</h5>
                                     <p>Started on September 15th, 2022, and finished on September 23rd, 2022</p>
@@ -53,7 +54,7 @@ function Portfolio() {
                             </div>
                             <div>
                                 <a href="https://ethan-w-foshee.github.io/dummyDataToDoList/"><img
-                                    src="/Web101-Foshee/image/TODO thumbnail.png" alt="To Do List" /></a>
+                                    src="../image/TODO thumbnail.png" alt="To Do List" /></a>
                                 <div >
                                     <h5>A Dummy To-Do List, for testing fetches, and filters</h5>
                                     <p>Created on September 27th, 2022</p>
@@ -71,7 +72,7 @@ function Portfolio() {
                     </div>
                 </div>
             </main>
-        </body>
+        </div>
     )
 }
 
