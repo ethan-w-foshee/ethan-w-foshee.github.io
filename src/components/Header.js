@@ -14,7 +14,7 @@ function Header() {
                     ></Icon></Link>
                 <Link to="/Resume" id="has-border-darker" class="navButton">Resume</Link>
                 <Link to="/Portfolio" id="has-border-dark" class="navButton">Portfolio</Link>
-                <a id="has-border-lighter" class="navButton" href="https://medium.com/@ethan.w.foshee">My Blog</a>
+                <a id="has-border-lighter" class="navButton" href="https://blog.starzlinger.cc">My Blog</a>
                 <Link to="/Contact" id="has-border-light" class="navButton">Contact Me</Link>
             </nav>
             <div id="graybox"></div>
