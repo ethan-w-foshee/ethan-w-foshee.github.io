@@ -14,8 +14,8 @@ function Home() {
           <h2 id="title">
             Freelance Web Developer
           </h2>
+          <h3 id="tagline">A full-stack developer diving into the world of technology with enthusiasm and a drive for learning.</h3>
           <p id="about-me">
-            A full-stack developer diving into the world of technology with enthusiasm and a drive for learning. 
             With a foundation in coding and a hunger for challenges, I'm committed to honing my skills and delivering quality results. 
             My journey into the realm of development started with a genuine curiosity, and since then, 
             I've been on a quest to master the craft, thriving on problem-solving and creative solutions. 

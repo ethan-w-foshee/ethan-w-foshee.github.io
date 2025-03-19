@@ -13,10 +13,11 @@
     }
 
     #homemain {
-        height: 55vh;
-        width: 100%;
+        height: 65vh;
+        width: 95%;
         display: grid;
-        grid-template-columns: 20% 20% 50%;
+        grid-template-columns: 30% 10% 60%;
+        margin: auto;
     }
 
     #profile-pic {
@@ -40,12 +41,22 @@
     #about-me{
         color: white;
         font-size: 13pt;
+        text-shadow: 1px 1px 0.4em black;
     }
 
     #title {
-        margin: 3% auto;
         font-style: italic;
-        color: black
+        color: black;
+        margin-bottom: 0;
+    }
+
+    #tagline {
+        color: #444040;
+        font-weight: normal;
+        margin-top: 1%;
+        font-style: italic;
+        font-size: 15pt;
+        text-shadow: 1px 1px 0.4em white;
     }
 
     .main-frosted {
@@ -103,6 +114,10 @@
         font-style: italic;
         color: #222222;
         border-bottom: 3px solid;
+    }
+
+    #tagline {
+        color: #888888;
     }
 
     #about-me {
