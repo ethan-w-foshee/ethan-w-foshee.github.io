@@ -16,7 +16,8 @@ import CodeIcon from '@mui/icons-material/Code';
 import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
 
 // Import images
-import NASA from '../image/NASA Web Thumbnail.png';
+import * as Images from '../components/Images.js'
+
 
 // Styles
 import '../styles/portfolio-styles.css'
@@ -28,7 +29,7 @@ const portfolioItems = [
         title: 'NASA Website',
         description: 'My first website created',
         date: 'Created on August 28th, 2022',
-        image: NASA, // Using the imported image
+        image: Images.NASA,
         link: 'https://ethan-w-foshee.github.io/NASAlanding/',
         repoLink: 'https://github.com/ethan-w-foshee/NASAlanding',
         technologies: ['HTML', 'CSS']
@@ -38,7 +39,7 @@ const portfolioItems = [
         title: 'Responsive Website',
         description: 'My first RESPONSIVE website created',
         date: 'Created on September 1st, 2022',
-        image: 'https://via.placeholder.com/600x400?text=Responsive+Website', // Placeholder
+        image: Images.Response,
         link: 'https://ethan-w-foshee.github.io/First-Responsive-Website/',
         repoLink: 'https://github.com/ethan-w-foshee/First-Responsive-Website',
         technologies: ['HTML', 'CSS', 'Responsive Design']
@@ -48,7 +49,7 @@ const portfolioItems = [
         title: 'Calculator App',
         description: 'A Calculator using Basic Javascript',
         date: 'Created on September 13th, 2022',
-        image: 'https://via.placeholder.com/600x400?text=Calculator+App', // Placeholder
+        image: Images.Calc,
         link: 'https://ethan-w-foshee.github.io/calculator-app-101/',
         repoLink: 'https://github.com/ethan-w-foshee/calculator-app-101',
         technologies: ['HTML', 'CSS', 'JavaScript']
@@ -58,7 +59,7 @@ const portfolioItems = [
         title: 'Even and Odd List',
         description: 'An Even and Odd List for inputting HTML',
         date: 'Created on September 20th, 2022',
-        image: 'https://via.placeholder.com/600x400?text=Even+Odd+List', // Placeholder
+        image: Images.EvenOdd,
         link: 'https://ethan-w-foshee.github.io/evenOdd-lists/',
         repoLink: 'https://github.com/ethan-w-foshee/evenOdd-lists',
         technologies: ['HTML', 'CSS', 'JavaScript', 'DOM Manipulation']
@@ -68,7 +69,7 @@ const portfolioItems = [
         title: 'Hair Salon Website',
         description: 'A Hair Salon Website',
         date: 'Started on September 15th, 2022, and finished on September 23rd, 2022',
-        image: 'https://via.placeholder.com/600x400?text=Hair+Salon', // Placeholder
+        image: Images.Hair,
         link: 'https://ethan-w-foshee.github.io/hair-salon/',
         repoLink: 'https://github.com/ethan-w-foshee/hair-salon',
         technologies: ['HTML', 'CSS', 'Responsive Design']
@@ -78,7 +79,7 @@ const portfolioItems = [
         title: 'To-Do List',
         description: 'A Dummy To-Do List, for testing fetches, and filters',
         date: 'Created on September 27th, 2022',
-        image: 'https://via.placeholder.com/600x400?text=ToDo+List', // Placeholder
+        image: Images.TODO,
         link: 'https://ethan-w-foshee.github.io/dummyDataToDoList/',
         repoLink: 'https://github.com/ethan-w-foshee/dummyDataToDoList',
         technologies: ['HTML', 'CSS', 'JavaScript', 'API', 'Fetch']
@@ -88,7 +89,7 @@ const portfolioItems = [
         title: 'Tic-Tac-Toe',
         description: 'TIC-TAC-TOE using JavaScript',
         date: 'Started on September 8th, 2022, and finished on September 27th, 2022',
-        image: 'https://via.placeholder.com/600x400?text=Tic+Tac+Toe', // Placeholder
+        image: Images.TTT,
         link: 'https://ethan-w-foshee.github.io/TicTacToe-101/',
         repoLink: 'https://github.com/ethan-w-foshee/TicTacToe-101',
         technologies: ['HTML', 'CSS', 'JavaScript', 'Game Logic']
