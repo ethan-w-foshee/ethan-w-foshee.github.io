@@ -94,7 +94,7 @@
         bottom: 0;
         width: 100%;
         height: 5%;
-        position: absolute;
+        position: sticky;
         background-color: #444444;
         text-align: left;
     }
