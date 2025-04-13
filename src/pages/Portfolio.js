@@ -10,6 +10,8 @@ import {
     Button,
     Divider
 } from '@mui/material';
+import { createTheme, ThemeProvider } from '@mui/material';
+import { purple } from '@mui/material/colors';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import LaunchIcon from '@mui/icons-material/Launch';
 import CodeIcon from '@mui/icons-material/Code';
@@ -21,6 +23,14 @@ import * as Images from '../components/Images.js'
 
 // Styles
 import '../styles/portfolio-styles.css'
+const theme = createTheme({
+    palette: {
+        primary: {
+            main: purple[500]
+        }
+    }
+})
+
 
 // {Prtfolio items based on current portfolio
 const portfolioItems = [
@@ -104,132 +114,134 @@ const Portfolio = () => {
     };
 
     return (
-        <Box id="portbody" sx={{ maxWidth: "100vw", margin: '0 auto', padding: 2, bgcolor: '#f5f5f5', minHeight: '80vh' }}>
-            <Typography
-                variant="h4"
-                component="h2"
-                gutterBottom
-                align="center"
-                sx={{
-                    mb: 4,
-                    fontWeight: 'bold',
-                    color: '#333',
-                    pt: 2
-                }}
-            >
-                My Portfolio
-            </Typography>
-
-            {portfolioItems.map((item) => (
-                <Accordion
-                    key={item.id}
-                    expanded={expanded === `panel${item.id}`}
-                    onChange={handleChange(`panel${item.id}`)}
+        <ThemeProvider theme={theme}>
+            <Box id="portbody" sx={{ maxWidth: "100vw", margin: '0 auto', padding: 2, bgcolor: '#f5f5f5', minHeight: '80vh' }}>
+                <Typography
+                    variant="h4"
+                    component="h2"
+                    gutterBottom
+                    align="center"
                     sx={{
-                        mb: 2,
-                        boxShadow: 2,
-                        '&:before': { display: 'none' }, // Remove the default line
-                        borderRadius: '8px',
-                        overflow: 'hidden',
-                        '&.Mui-expanded': {
-                            borderRadius: '8px',
-                        }
+                        mb: 4,
+                        fontWeight: 'bold',
+                        color: '#333',
+                        pt: 2
                     }}
                 >
-                    <AccordionSummary
-                        expandIcon={<ExpandMoreIcon />}
-                        aria-controls={`panel${item.id}-content`}
-                        id={`panel${item.id}-header`}
+                    My Portfolio
+                </Typography>
+
+                {portfolioItems.map((item) => (
+                    <Accordion
+                        key={item.id}
+                        expanded={expanded === `panel${item.id}`}
+                        onChange={handleChange(`panel${item.id}`)}
                         sx={{
-                            backgroundColor: expanded === `panel${item.id}` ? '#e3f2fd' : 'rgba(0, 0, 0, 0.03)',
-                            borderBottom: expanded === `panel${item.id}` ? '1px solid rgba(0, 0, 0, 0.12)' : 'none',
-                            minHeight: 64,
-                            '&:hover': {
-                                backgroundColor: '#e3f2fd',
+                            mb: 2,
+                            boxShadow: 2,
+                            '&:before': { display: 'none' }, // Remove the default line
+                            borderRadius: '8px',
+                            overflow: 'hidden',
+                            '&.Mui-expanded': {
+                                borderRadius: '8px',
                             }
                         }}
                     >
-                        <Typography variant="h6" component="div" sx={{ flexGrow: 1, fontWeight: expanded === `panel${item.id}` ? 'bold' : 'normal' }}>
-                            {item.title}
-                        </Typography>
-                    </AccordionSummary>
-                    <AccordionDetails sx={{ p: 0 }}>
-                        <Grid container spacing={0}>
-                            <Grid item xs={12} md={5}>
-                                <CardMedia
-                                    component="img"
-                                    image={item.image}
-                                    alt={item.title}
-                                    sx={{ height: '100%', minHeight: 250, objectFit: 'cover' }}
-                                />
-                            </Grid>
-                            <Grid item xs={12} md={7}>
-                                <Box sx={{ p: 3 }}>
-                                    <Typography variant="body1" paragraph>
-                                        {item.description}
-                                    </Typography>
-
-                                    <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
-                                        <CalendarTodayIcon fontSize="small" sx={{ mr: 1, color: 'text.secondary' }} />
-                                        <Typography variant="body2" color="text.secondary" sx={{ fontStyle: 'italic' }}>
-                                            {item.date}
+                        <AccordionSummary
+                            expandIcon={<ExpandMoreIcon />}
+                            aria-controls={`panel${item.id}-content`}
+                            id={`panel${item.id}-header`}
+                            sx={{
+                                backgroundColor: expanded === `panel${item.id}` ? '#edcbfc' : 'rgba(0, 0, 0, 0.03)',
+                                borderBottom: expanded === `panel${item.id}` ? '1px solid rgba(0, 0, 0, 0.12)' : 'none',
+                                minHeight: 64,
+                                '&:hover': {
+                                    backgroundColor: '#edcbfc',
+                                }
+                            }}
+                        >
+                            <Typography variant="h6" component="div" sx={{ flexGrow: 1, fontWeight: expanded === `panel${item.id}` ? 'bold' : 'normal' }}>
+                                {item.title}
+                            </Typography>
+                        </AccordionSummary>
+                        <AccordionDetails sx={{ p: 0 }}>
+                            <Grid container spacing={0}>
+                                <Grid item xs={12} md={5}>
+                                    <CardMedia
+                                        component="img"
+                                        image={item.image}
+                                        alt={item.title}
+                                        sx={{ height: '100%', minHeight: 250, objectFit: 'cover' }}
+                                    />
+                                </Grid>
+                                <Grid item xs={12} md={7}>
+                                    <Box sx={{ p: 3 }}>
+                                        <Typography variant="body1" paragraph>
+                                            {item.description}
                                         </Typography>
-                                    </Box>
 
-                                    <Typography variant="subtitle2" sx={{ mb: 1 }}>
-                                        Technologies:
-                                    </Typography>
-                                    <Box sx={{ mb: 2, display: 'flex', flexWrap: 'wrap', gap: 1 }}>
-                                        {item.technologies.map((tech, index) => (
-                                            <Typography
-                                                key={index}
-                                                variant="body2"
-                                                sx={{
-                                                    py: 0.5,
-                                                    px: 1.5,
-                                                    bgcolor: 'rgba(25, 118, 210, 0.1)',
-                                                    borderRadius: 5,
-                                                    border: '1px solid rgba(25, 118, 210, 0.2)',
-                                                    color: 'primary.main',
-                                                    display: 'inline-block'
-                                                }}
-                                            >
-                                                {tech}
+                                        <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
+                                            <CalendarTodayIcon fontSize="small" sx={{ mr: 1, color: 'text.secondary' }} />
+                                            <Typography variant="body2" color="text.secondary" sx={{ fontStyle: 'italic' }}>
+                                                {item.date}
                                             </Typography>
-                                        ))}
-                                    </Box>
+                                        </Box>
 
-                                    <Divider sx={{ mb: 2 }} />
+                                        <Typography variant="subtitle2" sx={{ mb: 1 }}>
+                                            Technologies:
+                                        </Typography>
+                                        <Box sx={{ mb: 2, display: 'flex', flexWrap: 'wrap', gap: 1 }}>
+                                            {item.technologies.map((tech, index) => (
+                                                <Typography
+                                                    key={index}
+                                                    variant="body2"
+                                                    sx={{
+                                                        py: 0.5,
+                                                        px: 1.5,
+                                                        bgcolor: 'rgba(118, 25, 210, 0.1)',
+                                                        borderRadius: 5,
+                                                        border: '1px solid rgba(179, 25, 210, 0.2)',
+                                                        color: 'primary.main',
+                                                        display: 'inline-block'
+                                                    }}
+                                                >
+                                                    {tech}
+                                                </Typography>
+                                            ))}
+                                        </Box>
 
-                                    <Box sx={{ display: 'flex', gap: 2 }}>
-                                        <Button
-                                            variant="contained"
-                                            color="primary"
-                                            href={item.link}
-                                            target="_blank"
-                                            startIcon={<LaunchIcon />}
-                                            sx={{ borderRadius: 2 }}
-                                        >
-                                            View Live
-                                        </Button>
-                                        <Button
-                                            variant="outlined"
-                                            color="primary"
-                                            href={item.repoLink}
-                                            target="_blank"
-                                            startIcon={<CodeIcon />}
-                                            sx={{ borderRadius: 2 }}
-                                        >
-                                            View Code
-                                        </Button>
+                                        <Divider sx={{ mb: 2 }} />
+
+                                        <Box sx={{ display: 'flex', gap: 2 }}>
+                                            <Button
+                                                variant="contained"
+                                                color="primary"
+                                                href={item.link}
+                                                target="_blank"
+                                                startIcon={<LaunchIcon />}
+                                                sx={{ borderRadius: 2 }}
+                                            >
+                                                View Live
+                                            </Button>
+                                            <Button
+                                                variant="outlined"
+                                                color="primary"
+                                                href={item.repoLink}
+                                                target="_blank"
+                                                startIcon={<CodeIcon />}
+                                                sx={{ borderRadius: 2 }}
+                                            >
+                                                View Code
+                                            </Button>
+                                        </Box>
                                     </Box>
-                                </Box>
+                                </Grid>
                             </Grid>
-                        </Grid>
-                    </AccordionDetails>
-                </Accordion>
-            ))}
-        </Box>
+                        </AccordionDetails>
+                    </Accordion>
+                ))}
+            </Box>
+        </ThemeProvider>
     );
 };
 
