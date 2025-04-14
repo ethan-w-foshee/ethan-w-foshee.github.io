@@ -8,6 +8,7 @@ function Header() {
     return (
         <header id='navHeader'>
             <nav>
+                
                 <Link to="/" id="logo"><Icon id="logoAgain"
                     component={logo}
                     sx={{fontSize:50}}
@@ -18,7 +19,6 @@ function Header() {
                 <Link to="/Contact" id="has-border-light" class="navButton">Contact Me</Link>
             </nav>
             <div id="graybox"></div>
-            {/* <div id="tapBox" onClick="openNav()"></div> */}
         </header>
     )
 }
