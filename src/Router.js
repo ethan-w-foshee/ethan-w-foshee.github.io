@@ -6,6 +6,7 @@ import Contact from './pages/Contact'
 import Home from './pages/Home';
 import Resume from './pages/Resume';
 import Portfolio from './pages/Portfolio';
+import BlogPage from './pages/Blog';
 
 const Router = () => {
     return(
@@ -14,6 +15,8 @@ const Router = () => {
             <Route path="/" element={<Home/>} />
             <Route path="/Resume" element={<Resume/>} />
             <Route path="/Portfolio" element={<Portfolio/>} />
+            <Route path="/Blog" element={<BlogPage/>}/>
+            <Route path="/blog/:postId" element={<BlogPage />} />
         </Routes>
     )
 }
