@@ -6,7 +6,7 @@
         #CB8BE5 18% 25%, #8537A5 25% 74%, 
         #690990 74% 93%, #222222 93% 100%) 
         no-repeat center center fixed;
-        height: auto;
+        height: 100vh;
     }
 
     .top-bar h1 {
