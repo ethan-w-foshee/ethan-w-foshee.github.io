@@ -3,7 +3,6 @@ import React from 'react';
 import {
     Card,
     CardContent,
-    CardMedia,
     Typography,
     CardActions,
     Button,
@@ -37,19 +36,6 @@ const BlogPost = ({ post }) => {
             }}
         >
             <Box sx={{ display: 'flex', flexDirection: { xs: 'column', md: 'row' } }}>
-                {post.featuredImage && (
-                    <CardMedia
-                        component="img"
-                        sx={{
-                            width: { xs: '100%', md: '300px' },
-                            height: { xs: '200px', md: '100%' },
-                            objectFit: 'cover'
-                        }}
-                        image={post.featuredImage}
-                        alt={post.title}
-                    />
-                )}
-
                 <Box sx={{ display: 'flex', flexDirection: 'column', width: '100%' }}>
                     <CardContent sx={{ flex: '1 0 auto', p: 3 }}>
                         {post.tags && (

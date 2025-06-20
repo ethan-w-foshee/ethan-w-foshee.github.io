@@ -1,0 +1,9 @@
+@media (min-width: 576px) {
+    #blog-body {
+        background: linear-gradient(to bottom left, white 8%, #E9B9FF 8% 18%, 
+        #CB8BE5 18% 69%, #8537A5 69% 82%, 
+        #690990 82% 91%, #222222 91% 100%) 
+        no-repeat center center fixed;
+        height: 100vh;
+    }
+}

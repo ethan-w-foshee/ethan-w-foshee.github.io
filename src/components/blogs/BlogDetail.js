@@ -4,8 +4,6 @@ import {
     Typography,
     Box,
     Button,
-    Card,
-    CardMedia,
     Chip,
     Divider,
     Paper,
@@ -46,24 +44,6 @@ const BlogDetail = ({ post, onBack }) => {
             >
                 Back to All Posts
             </Button>
-
-            <Card sx={{ mb: 4, overflow: 'hidden' }}>
-                {post.featuredImage && (
-                    <CardMedia
-                        component="img"
-                        height="400"
-                        image={post.featuredImage}
-                        alt={post.title}
-                        sx={{
-                            objectFit: 'cover',
-                            transition: 'transform 0.3s ease-in-out',
-                            '&:hover': {
-                                transform: 'scale(1.02)'
-                            }
-                        }}
-                    />
-                )}
-            </Card>
 
             <Typography
                 variant="h3"

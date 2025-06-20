@@ -6,16 +6,12 @@ import {
     Box,
     Typography,
     Breadcrumbs,
-    Link,
     CircularProgress
 } from '@mui/material';
 import BlogList from '../components/blogs/BlogList.js';
 import BlogDetail from '../components/blogs/BlogDetail.js';
 
-// Import your site's layout components as needed
-// import MainLayout from '../layouts/MainLayout';
-// import Header from '../components/Header';
-// import Footer from '../components/Footer';
+import '../styles/blog-styles.css'
 
 // Sample data - replace with your actual data source
 import { blogPosts } from '../components/blogs/BlogData.js';
@@ -52,10 +48,6 @@ const BlogPage = () => {
     }, []);
 
     // Handle navigation
-    const handleBreadcrumbClick = (e) => {
-        e.preventDefault();
-        navigate('/blog');
-    };
 
     if (loading) {
         return (
@@ -80,41 +72,18 @@ const BlogPage = () => {
     }
 
     return (
-        // If you have a layout component, wrap this content with it
-        // <MainLayout>
         <Box
-            sx={{
-                bgcolor: 'background.paper',
-                minHeight: '100vh',
-                pt: 3,
-                pb: 8
-            }}
+        id="blog-body"
+            // sx={{
+            //     bgcolor: 'background.paper',
+            //     minHeight: '100vh',
+            //     pt: 3,
+            //     pb: 8
+            // }}
         >
             <Container maxWidth="lg">
                 {/* Breadcrumbs navigation */}
-                <Breadcrumbs sx={{ mb: 4 }}>
-                    {/* <Link color="inherit" href="/" onClick={(e) => {
-                        e.preventDefault();
-                        navigate('/');
-                    }}>
-                        Home
-                    </Link> */}
-                    {postId ? (
-                        <>
-                            <Link
-                                color="inherit"
-                                href="/blog"
-                                onClick={handleBreadcrumbClick}
-                            >
-                                Blog
-                            </Link>
-                            <Typography color="text.primary">
-                                {posts.find(post => post.id.toString() === postId)?.title || 'Post'}
-                            </Typography>
-                        </>
-                    ) : (
-                        <Typography color="text.primary">Blog</Typography>
-                    )}
+                <Breadcrumbs sx={{ mb: 4 }}>    
                 </Breadcrumbs>
 
                 {/* Render either list or detail view based on URL */}
@@ -135,7 +104,7 @@ const BlogPage = () => {
                                 mb: 4
                             }}
                         >
-                            Our Blog
+                            My BlogSpot
                         </Typography>
                         <Typography
                             variant="subtitle1"

@@ -46,9 +46,6 @@ const BlogList = ({ posts }) => {
 
     return (
         <Container maxWidth="lg" sx={{ py: 4 }}>
-            <Typography variant="h2" component="h1" gutterBottom align="center" sx={{ mb: 4 }}>
-                Our Blog
-            </Typography>
 
             {/* Search and filter */}
             <Box sx={{ mb: 4, display: 'flex', gap: 2, flexWrap: 'wrap' }}>
