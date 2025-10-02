@@ -12,10 +12,10 @@ function Contact() {
                 <h1>Reach Out to Me!</h1>
                 <div class="contact-frosted">
                     <ol class="contact-socials">
-                        <li id="discord">My Discord Server<br />
+                        {/* <li id="discord">My Discord Server<br />
                             <span class="sub-social"><a href="https://discord.gg/ZdzznMQ" target="_blank" rel='noreferrer'>
                                 <img src={discord} alt='discord logo' /></a></span>
-                        </li>
+                        </li> */}
                         <li id="gmail">Email<br />
                             <span class="sub-social"><a href="mailto:ethan.w.foshee@gmail.com" target="_blank" rel='noreferrer'>
                                 <img src={gmail} alt='gmail logo'/></a></span>
